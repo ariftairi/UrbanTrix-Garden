@@ -1,0 +1,83 @@
+.menu-buttons{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn {
+    margin: 5px 5px;
+    border-radius: 3px;
+    border: none;
+    background-color:#1a252f;
+
+}
+
+.btn:hover{
+    color: rgb(228, 228, 141);
+    background-color:#070b0e;
+}
+
+.btn:active{
+    color: rgb(228, 228, 141);
+}
+
+.btn:focus{
+    color: rgb(228, 228, 141);
+}
+
+/* whichOne */
+.whichOne {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+.select {
+    width: 40%;
+    margin:10px auto;
+}
+
+.selectFood{
+    display: block;
+    width: 100%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 20px 30px;
+    background-image: url("../Images/food.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+  
+}
+
+.selectDrink{
+    display: block;
+    width: 100%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 20px 30px;
+    background-image: url("../Images/drink.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.selectFood:hover, .selectDrink:hover {
+    border:none;
+    opacity: 0.8;
+    font-weight: 500;
+    transition: .6s;
+}
+

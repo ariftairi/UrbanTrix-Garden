@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox , Edge*/
+.example {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Header */
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(5, 10, 14);
+  color: whitesmoke;
+  width: 100%;
+  text-align: center;
+}
+.contact {
+  text-align: center;
+  font-family: "Satisfy", cursive;
+  margin: 20px;
+  font-size: 30px;
+}
+
+.header-title {
+  color: whitesmoke;
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 0;
+  letter-spacing: 10px;
+}
+
+/* Footer */
+.page-footer {
+  background-color: rgb(5, 10, 14);
+  color: whitesmoke;
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.textMedia {
+  padding-left: 10px;
+}
+
+/* Cardss */
+.row {
+  margin: 20px 0px;
+  float: left;
+  width: 100%;
+}
+
+.card {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 17rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.menu {
+  font-family: "Satisfy", cursive;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 8px #8b8b8b;
+}
+
+h3 {
+  font-family: "Satisfy", cursive;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 8px #b4b4b4;
+}
+
+/* Header for Mobiles or devices to 900px */
+
+@media only screen and (max-width: 900px) {
+  .logg {
+    width: 70px;
+    height: 60px;
+    float: left;
+    margin-top: 15px;
+  }
+  .header-title {
+    font-size: 20px;
+    padding-top: 20px;
+   margin-top: -20px;
+    
+  }
+
+  .header {
+    width: 100%;
+    height: 100px;
+    
+   
+  }
+  .category {
+    font-size: 20px;
+    
+  }
+}
+
+.social-container {
+  text-align: center;
+  margin: 10px;
+}
