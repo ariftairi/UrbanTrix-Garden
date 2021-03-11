@@ -176,7 +176,7 @@ export default class Burgers extends Component {
   render() {
     return (
       <div>
-        <h3>Desert</h3>
+        <h3>Juices and Smoothies</h3>
         <hr />
         <div className="row">
           {this.state.Desert.map((items) => (

@@ -64,7 +64,7 @@ export default class Pasta extends Component {
   render() {
     return (
       <div>
-        <h3>Drinks</h3>
+        <h3>Other Drinks</h3>
         <hr />
         <div className="row">
           {this.state.Pasta.map((items) => (

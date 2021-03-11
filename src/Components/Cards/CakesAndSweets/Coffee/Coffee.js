@@ -112,7 +112,7 @@ export default class Pizza extends Component {
   render() {
     return (
       <div>
-        <h3>Pizza</h3>
+        <h3>Coffee</h3>
         <hr />
         <div className="row">
           {this.state.Pizza.map((items) => (

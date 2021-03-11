@@ -1,95 +1,108 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import Coffee from '../../Cards/CakesAndSweets/Coffee/Coffee'
-import JuicesAndSmoothies from '../../Cards/CakesAndSweets/JuicesAndSmoothies/JuicesAndSmoothies'
-import OtherDrinks from '../../Cards/CakesAndSweets/OtherDrinks/OtherDrinks'
-
-
+import Coffee from "../../Cards/CakesAndSweets/Coffee/Coffee";
+import JuicesAndSmoothies from "../../Cards/CakesAndSweets/JuicesAndSmoothies/JuicesAndSmoothies";
+import OtherDrinks from "../../Cards/CakesAndSweets/OtherDrinks/OtherDrinks";
 
 export default class HandleFoods extends Component {
-    constructor() {
-        super()
-        this.state = {
-            CoffeeState: true,
-            JuicesAndSmoothiesState: true,
-            OtherDrinksState: true,
-            
-        }
-    }
+  constructor() {
+    super();
+    this.state = {
+      JuicesAndSmoothiesState: true,
+      OtherDrinksState: true,
+      CoffeeState: true,
+    };
+  }
 
-    // Show All
-    allButtonHandler = () => {
-        this.setState({
-            CoffeeState: true,
-            JuicesAndSmoothiesState: true,
-            OtherDrinksState: true,
-        })
-    }
+  // Show All
+  allButtonHandler = () => {
+    this.setState({
+      JuicesAndSmoothiesState: true,
+      OtherDrinksState: true,
+      CoffeeState: true,
+    });
+  };
 
+  // Coffee
+  CoffeeButtonHandler = () => {
+    this.setState({
+      JuicesAndSmoothiesState: false,
+      OtherDrinksState: false,
+      CoffeeState: true,
+    });
+  };
 
-    // Coffee
-    CoffeeButtonHandler = () => {
-        this.setState({
-            CoffeeState: true,
-            JuicesAndSmoothiesState: false,
-            OtherDrinksState: false,
+  // Juices and Smoothies
+  JuicesAndSmoothiesButtonHandler = () => {
+    this.setState({
+      JuicesAndSmoothiesState: true,
+      OtherDrinksState: false,
+      CoffeeState: false,
+    });
+  };
 
-        })
-    }
+  // Other Drinks
+  OtherDrinksButtonHandler = () => {
+    this.setState({
+      JuicesAndSmoothiesState: false,
+      OtherDrinksState: true,
+      CoffeeState: false,
+    });
+  };
 
-    // Juices and Smoothies
-    JuicesAndSmoothiesButtonHandler = () => {
-        this.setState({
-            CoffeeState: false,
-            JuicesAndSmoothiesState: true,
-            OtherDrinksState: false,
-        })
-    }
+  render() {
+    // importing cards classes
+    const JuicesAndSmoothiesMenu = <JuicesAndSmoothies />;
+    const OtherDrinksMenu = <OtherDrinks />;
+    const CoffeeMenu = <Coffee />;
 
-    // Other Drinks
-    OtherDrinksButtonHandler = () => {
-        this.setState({
-            CoffeeState: false,
-            JuicesAndSmoothiesState: false,
-            OtherDrinksState: true,
-        })
-    }
+    return (
+      <div>
+        <div className="menu-buttons">
+          <button
+            onClick={this.allButtonHandler}
+            type="button"
+            className="btn btn-primary"
+          >
+            All
+          </button>
+          
+          <button
+            onClick={this.JuicesAndSmoothiesButtonHandler}
+            type="button"
+            className="btn btn-primary"
+          >
+            JuicesAndSmoothies
+          </button>
+          <button
+            onClick={this.OtherDrinksButtonHandler}
+            type="button"
+            className="btn btn-primary"
+          >
+            Other Drinks
+          </button>
+          <button
+            onClick={this.CoffeeButtonHandler}
+            type="button"
+            className="btn btn-primary"
+          >
+            Coffee
+          </button>
+        </div>
 
- 
-
-
-    render() {
-
-        // importing cards classes
-        const CoffeeMenu = <Coffee />
-        const JuicesAndSmoothiesMenu = <JuicesAndSmoothies />
-        const OtherDrinksMenu = <OtherDrinks />
-     
        
 
-        return (
-            <div>
-                <div className="menu-buttons">
-                    <button onClick={this.allButtonHandler} type="button" className="btn btn-primary">All</button>
-                    <button onClick={this.CoffeeButtonHandler} type="button" className="btn btn-primary">Coffee</button>
-                    <button onClick={this.JuicesAndSmoothiesButtonHandler} type="button" className="btn btn-primary">JuicesAndSmoothies</button>
-                    <button onClick={this.OtherDrinksButtonHandler} type="button" className="btn btn-primary">Other Drinks</button>
-                    
-                    
+        {/* show JuicesAndSmoothies class */}
+        {this.state.JuicesAndSmoothiesState ? (
+          <div>{JuicesAndSmoothiesMenu}</div>
+        ) : null}
 
-                </div>
+        {/* show OtherDrinks class */}
+        {this.state.OtherDrinksState ? <div>{OtherDrinksMenu}</div> : null}
 
-
-                {/* show Coffee class */}
-                { this.state.CoffeeState ? <div>{CoffeeMenu}</div> : null}
-
-                {/* show JuicesAndSmoothies class */}
-                { this.state.JuicesAndSmoothiesState ? <div>{JuicesAndSmoothiesMenu}</div> : null}
-
-                {/* show OtherDrinks class */}
-                { this.state.OtherDrinksState ? <div>{OtherDrinksMenu}</div> : null}
-
-            </div >
-        )
-    }
+         {/* show Coffee class */}
+         {this.state.CoffeeState ? <div>{CoffeeMenu}</div> : null}
+      </div>
+    );
+  }
 }

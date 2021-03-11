@@ -65,7 +65,7 @@ export default class ButtonNavigation extends Component {
           </a>
         </div>
         <hr />
-        <h2 className="menu">MENU / МЕНИ</h2>
+        <h2 className="menu">MENU</h2>
         <hr />
         {/* FOOD OR DRINKS */}
         <div className="whichOne">
