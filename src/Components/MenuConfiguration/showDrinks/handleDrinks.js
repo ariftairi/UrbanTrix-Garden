@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
-import Coffee from "../../Cards/Drinks/Coffe/coffe"
-import HotDrinks from "../../Cards/Drinks/HotDrinks/hotDrinks"
-import ColdDrinks from "../../Cards/Drinks/ColdDrinks/coldDrinks"
-
-
+import Breakfest from "../../Cards/Drinks/Breakfest/breakfest"
+import IceCream from "../../Cards/Drinks/IceCream/IceCream"
+import RawTreats from "../../Cards/Drinks/RawTreats/RawTreats"
+import RawSweets from "../../Cards/Drinks/RawSweets/RawSweets"
+import Cakes from "../../Cards/Drinks/Cakes/Cakes1"
 export default class HandleDrinks extends Component {
     constructor() {
         super()
         this.state = {
-            showCoffe: true,
-            showHotDrinks: true,
-            showColdDrinks: true,
+            showBreakfest: true,
+            showIceCream: true,
+            showRawTreats: true,
+            showRawSweets: true,
+            showCakes: true,
         }
     }
 
@@ -18,37 +20,67 @@ export default class HandleDrinks extends Component {
     // show all drinks
     showALL = () => {
         this.setState({
-            showCoffe: true,
-            showHotDrinks: true,
-            showColdDrinks: true
+            showBreakfest: true,
+            showIceCream: true,
+            showRawTreats: true,
+            showRawSweets: true,
+            showCakes: true,
         })
     }
 
 
-    // handle coffe button
-    coffeButtonHandler = () => {
+    // handle breakfest button
+    breakfestButtonHandler = () => {
         this.setState({
-            showCoffe: true,
-            showHotDrinks: false,
-            showColdDrinks: false
+            showBreakfest: true,
+            showIceCream: false,
+            showRawTreats: false,
+            showRawSweets: false,
+            showCakes: false,
         })
     }
 
-    // handle hot button
-    hotButtonHandler = () => {
+    // handle ice cream button
+    iceCreamButtonHandler = () => {
         this.setState({
-            showCoffe: false,
-            showHotDrinks: true,
-            showColdDrinks: false
+            showBreakfest: false,
+            showIceCream: true,
+            showRawTreats: false,
+            showRawSweets: false,
+            showCakes: false,
         })
     }
 
-    // handle cold button
-    coldButtonHandler = () => {
+    // handle raw treats button
+    rawTreatsButtonHandler = () => {
         this.setState({
-            showCoffe: false,
-            showHotDrinks: false,
-            showColdDrinks: true
+            showBreakfest: false,
+            showIceCream: false,
+            showRawTreats: true,
+            showRawSweets: false,
+            showCakes: false,
+        })
+    }
+
+     // handle raw sweets button
+     rawSweetsButtonHandler = () => {
+        this.setState({
+            showBreakfest: false,
+            showIceCream: false,
+            showRawTreats: false,
+            showRawSweets: true,
+            showCakes: false,
+        })
+    }
+
+      // handle Cakes button
+      CakesButtonHandler = () => {
+        this.setState({
+            showBreakfest: false,
+            showIceCream: false,
+            showRawTreats: false,
+            showRawSweets: false,
+            showCakes: true,
         })
     }
 
@@ -59,16 +91,20 @@ export default class HandleDrinks extends Component {
 
                 {/* handle buttons */}
                 <div className="menu-buttons">
-                    <button onClick={this.showALL} type="button" className="btn btn-primary" >Gjithë Pijet</button>
-                    <button onClick={this.coffeButtonHandler} type="button" className="btn btn-primary" >Kafe</button>
-                    <button onClick={this.hotButtonHandler} type="button" className="btn btn-primary" >Të nxehta</button>
-                    <button onClick={this.coldButtonHandler} type="button" className="btn btn-primary" >Të ftohta</button>
+                    <button onClick={this.showALL} type="button" className="btn btn-primary" >ALL</button>
+                    <button onClick={this.breakfestButtonHandler} type="button" className="btn btn-primary" >BREAKFEST</button>
+                    <button onClick={this.iceCreamButtonHandler} type="button" className="btn btn-primary" >ICE CREAM</button>
+                    <button onClick={this.rawTreatsButtonHandler} type="button" className="btn btn-primary" >RAW TREATS</button>
+                    <button onClick={this.rawSweetsButtonHandler} type="button" className="btn btn-primary" >RAW SWEETS</button>
+                    <button onClick={this.CakesButtonHandler} type="button" className="btn btn-primary" >CAKES</button>
                 </div>
 
 
-                {this.state.showCoffe ? <Coffee /> : null}
-                {this.state.showHotDrinks ? <HotDrinks /> : null}
-                {this.state.showColdDrinks ? <ColdDrinks /> : null}
+                {this.state.showBreakfest ? <Breakfest /> : null}
+                {this.state.showIceCream ? <IceCream /> : null}
+                {this.state.showRawTreats ? <RawTreats /> : null}
+                {this.state.showRawSweets ? <RawSweets /> : null}
+                {this.state.showCakes ? <Cakes /> : null}
 
             </div>
         )

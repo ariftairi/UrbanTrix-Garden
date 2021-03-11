@@ -24,91 +24,36 @@ import viva from "../../../Images/coldDrinksImages/viva.png";
 
 
 
-export default class coldDrinks extends Component {
+export default class RawSweets extends Component {
     constructor() {
         super();
 
         this.state = {
             Desert: [
                 {
-                    emri: "UJË PA GAZ",
-                    perbersit: "",
-                    cmimi: "30",
+                    emri: "PROTEIN BAR",
+                    perbersit: "Cocoa Powder, Oats, Whey Protein, Dates",
+                    cmimi: "60",
                     image: uje,
                 },
                 {
-                    emri: "UJË ME GAZ",
-                    perbersit: "",
-                    cmimi: "30",
+                    emri: "TWIX",
+                    perbersit: "Oats, Almonds, Dates, Peanut Butter, Vanilla, Agava ",
+                    cmimi: "80",
                     image: ujemegaz,
                 },
                 {
-                    emri: "COCA COLA",
-                    perbersit: "",
-                    cmimi: "50",
+                    emri: "MINI CAKE",
+                    perbersit: "Almonds, Dates, Oats, Chocolate, Raspberry",
+                    cmimi: "100",
                     image: cola,
                 },
                 {
-                    emri: "FANTA",
-                    perbersit: "",
-                    cmimi: "50",
+                    emri: "RAW CHOCOLATE",
+                    perbersit: "Chocolate, Cocoa, Almonds, Cranberry",
+                    cmimi: "100",
                     image: fanta,
-                },
-                {
-                    emri: "STRUMKA",
-                    perbersit: "",
-                    cmimi: "50",
-                    image: strumka,
-                },
-                {
-                    emri: "SCHWEPPES",
-                    perbersit: "",
-                    cmimi: "50",
-                    image: schweppes,
-                },
-                {
-                    emri: "SHWEPPES TONIC",
-                    perbersit: "",
-                    cmimi: "50",
-                    image: tonic,
-                },
-                {
-                    emri: "SPRITE",
-                    perbersit: "",
-                    cmimi: "50",
-                    image: sprite,
-                },
-                {
-                    emri: "LËNG MOLLE",
-                    perbersit: "",
-                    cmimi: "50",
-                    image: lengmolle,
                 }
-                ,
-                {
-                    emri: "LËNG VISHNJE",
-                    perbersit: "",
-                    cmimi: "50",
-                    image: lengvishnje,
-                },
-                {
-                    emri: "LËNG PJESHKE",
-                    perbersit: "",
-                    cmimi: "50",
-                    image: lengpjeshke,
-                },
-                {
-                    emri: "LËNG PORTOKALLI",
-                    perbersit: "",
-                    cmimi: "50",
-                    image: lengportokalli,
-                },
-                {
-                    emri: "VIVA",
-                    perbersit: "",
-                    cmimi: "50",
-                    image: viva,
-                },
                 
 
             ],
@@ -118,7 +63,7 @@ export default class coldDrinks extends Component {
     render() {
         return (
             <div>
-                <h3>Pije të ftohta</h3>
+                <h3>Raw Sweets</h3>
                 <hr />
                 <div className="row">
                     {this.state.Desert.map((items) => (

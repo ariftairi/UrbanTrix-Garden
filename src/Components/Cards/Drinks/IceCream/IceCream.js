@@ -6,22 +6,70 @@ import nesquick from "../../../Images/hotDrinksImages/nesquick.jpg";
 
 
 
-export default class hotDrinks extends Component {
+export default class IceCream extends Component {
   constructor() {
     super();
 
     this.state = {
       Desert: [
         {
-          emri: "ÇAJ",
+          emri: "YOGHURT",
           perbersit: "",
-          cmimi: "30",
+          cmimi: "35",
           image: caj,
         },
         {
-          emri: "NESQUIK",
+          emri: "OREO",
           perbersit: "",
-          cmimi: "50",
+          cmimi: "35",
+          image: nesquick,
+        },
+        {
+          emri: "HAZELNUT",
+          perbersit: "",
+          cmimi: "35",
+          image: nesquick,
+        },
+        {
+          emri: "SNICKERS",
+          perbersit: "",
+          cmimi: "35",
+          image: nesquick,
+        },
+        {
+          emri: "FIG & NUTS",
+          perbersit: "",
+          cmimi: "35",
+          image: nesquick,
+        },
+        {
+          emri: "FOREST FRUIT",
+          perbersit: "",
+          cmimi: "35",
+          image: nesquick,
+        },
+        {
+          emri: "CHOCOLATE",
+          perbersit: "",
+          cmimi: "35",
+          image: nesquick,
+        },
+        {
+          emri: "STRAWBERRY",
+          perbersit: "",
+          cmimi: "35",
+          image: nesquick,
+        },
+        {
+          emri: "CARAMEL & NUTELLA",
+          perbersit: "",
+          cmimi: "35",
+          image: nesquick,
+        },
+        {
+          emri: "VANILLA",
+          perbersit: "",
+          cmimi: "35",
           image: nesquick,
         },
        
@@ -32,7 +80,7 @@ export default class hotDrinks extends Component {
   render() {
     return (
       <div>
-        <h3>Pije të nxehta</h3>
+        <h3>Ice Cream</h3>
         <hr />
         <div className="row">
           {this.state.Desert.map((items) => (

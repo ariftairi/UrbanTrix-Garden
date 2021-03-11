@@ -45,14 +45,14 @@ export default class ButtonNavigation extends Component {
 
         return (
             <div className="container">
-                <h5 className="contact">Contact of Pronto <br /></h5> <h4 className="contact"><a href="tel:070707733">070 707 733</a> </h4>
+                <h5 className="contact">Contact of Garden <br /></h5> <h4 className="contact"><a href="tel:044331006">044 331 006</a> </h4>
                 <div className="social-container">
-                    <a href="https://www.facebook.com/prontopizzalounge"
+                    <a href="https://www.facebook.com/gardenhealthy"
                         className="facebook social" target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faFacebook} size="2x" />
                     </a>
                     &nbsp;&nbsp;
-                    <a href="https://www.instagram.com/prontopizzalounge/"
+                    <a href="https://www.instagram.com/garden.official/"
                         className="instagram social" target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faInstagram} size="2x" />
                     </a>
@@ -64,11 +64,11 @@ export default class ButtonNavigation extends Component {
 
                 {/* FOOD OR DRINKS */}
                 <div className="whichOne">
-                    <div className="select">
-                        <button onClick={this.selectFoodHandler} className="selectFood">USHQIM/ХРАНА</button>
+                                    <div className="select">
+                        <button onClick={this.selectDrinkHandler} className="selectDrink">CAKES AND SWEETS</button>
                     </div>
                     <div className="select">
-                        <button onClick={this.selectDrinkHandler} className="selectDrink">PIJE/Пијалоци</button>
+                        <button onClick={this.selectFoodHandler} className="selectFood">DRINKS</button>
                     </div>
                 </div>
 

@@ -3,61 +3,29 @@ import "../../../../App.css";
 import ModalImage from "react-modal-image";
 import espreso from "../../../Images/kafeImages/espreso.jpg";
 import macchiato from "../../../Images/kafeImages/macchiato.jpg";
-import bigmacchiato from "../../../Images/kafeImages/bigmacchiato.jpg";
-import cappuccino from "../../../Images/kafeImages/cappuccino.jpg";
-import nescafe from "../../../Images/kafeImages/nescafe.png";
-import nescafecold from "../../../Images/kafeImages/nescafecold.jpg";
 
 
 
-export default class Coffee extends Component {
+
+export default class Breakfest extends Component {
   constructor() {
     super();
 
     this.state = {
       Desert: [
         {
-          emri: "ESPRESO",
-          perbersit: "",
-          cmimi: "30",
+          emri: "CHIA",
+          perbersit: "Almond milk, Blueberry, Chia seeds, Fruits, Agave, Cinnamon",
+          cmimi: "12",
           image: espreso,
         },
         {
-          emri: "MACCHIATO",
-          perbersit: "",
-          cmimi: "30",
+          emri: "OATMEAL",
+          perbersit: "Almond milk, ... ,Agave, Cinnamon",
+          cmimi: "110",
           image: macchiato,
         },
-        {
-            emri: "MACCHIATO E MADHE",
-            perbersit: "",
-            cmimi: "40",
-            image: bigmacchiato,
-          },
-          {
-            emri: "CAPPUCCINO",
-            perbersit: "",
-            cmimi: "30",
-            image: cappuccino,
-          },
-          {
-            emri: "CAPPUCCINO E MADHE ",
-            perbersit: "",
-            cmimi: "50",
-            image: cappuccino,
-          },
-          {
-            emri: "NESCAFE",
-            perbersit: "",
-            cmimi: "40",
-            image: nescafe,
-          },
-          {
-            emri: "NESCAFE E FTOHTË",
-            perbersit: "",
-            cmimi: "80",
-            image: nescafecold,
-          },
+        
       ],
     };
   }
@@ -65,7 +33,7 @@ export default class Coffee extends Component {
   render() {
     return (
       <div>
-        <h3>Kafe</h3>
+        <h3>Breakfest</h3>
         <hr />
         <div className="row">
           {this.state.Desert.map((items) => (
