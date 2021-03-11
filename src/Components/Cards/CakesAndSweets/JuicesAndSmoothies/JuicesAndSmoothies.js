@@ -13,12 +13,6 @@ import mango from "../../../Images/desertImages/mango.jpg";
 import cheesecake from "../../../Images/desertImages/cheesecake.jpg";
 import sheqerpare from "../../../Images/desertImages/sheqerpare.jpg";
 
-
-
-
-
-
-
 export default class Burgers extends Component {
   constructor() {
     super();
@@ -26,69 +20,153 @@ export default class Burgers extends Component {
     this.state = {
       Desert: [
         {
-          emri: "BAKLLAV RRETH",
-          perbersit: "",
-          cmimi: "20",
+          emri: "GARDEN JUICE",
+          perbersit: "Orange, Apple, Banana",
+          cmimi: "80",
           image: bakllavreth,
         },
         {
-          emri: "SHEQERPARE",
-          perbersit: "",
-          cmimi: "30",
+          emri: "GARDEN FRAPPE",
+          perbersit: "Banana, Milk, Honey",
+          cmimi: "80",
           image: sheqerpare,
         },
         {
-          emri: "BOEM",
-          perbersit: "",
-          cmimi: "30",
+          emri: "IMMUNITY",
+          perbersit: "Orange, Ginger, Carrot",
+          cmimi: "80",
           image: boem,
         },
         {
-          emri: "KARAMEL",
-          perbersit: "",
-          cmimi: "40",
+          emri: "TROPICAL JUICE",
+          perbersit: "Orange, Banana, Pineapple",
+          cmimi: "80",
           image: karamel,
         },
         {
-          emri: "NUTELLA",
-          perbersit: "",
-          cmimi: "40",
+          emri: "ORANGE JOY",
+          perbersit: "Orange, Lemon, Carrot",
+          cmimi: "80",
           image: nutella,
         },
         {
-          emri: "VISHNJE",
-          perbersit: "",
-          cmimi: "40",
+          emri: "GINGER HONEY",
+          perbersit: "Ginger, Orange, Apple, Honey",
+          cmimi: "90",
           image: vishnje,
         },
         {
-          emri: "MANGO",
-          perbersit: "",
-          cmimi: "40",
+          emri: "GINGER BLAST",
+          perbersit: "Ginger, Orange, Apple, Lemon",
+          cmimi: "90",
           image: mango,
         },
         {
-          emri: "RAFAELO",
-          perbersit: "",
-          cmimi: "50",
+          emri: "MORNING DELIGHT",
+          perbersit: "Orange, Grapefruit, Lemon",
+          cmimi: "90",
           image: rafaelo,
         },
         {
-          emri: "CHEESECAKE",
-          perbersit: "",
+          emri: "ORANGE SUNSHINE",
+          perbersit: "Orange, Turmeric, Apple, Lemon",
           cmimi: "50",
           image: cheesecake,
         },
         {
-          emri: "PANNA COTTA",
-          perbersit: "",
-          cmimi: "",
+          emri: "SIMPLE TASTE",
+          perbersit: "Green Apple, Pinneapple",
+          cmimi: "90",
           image: pannacotta,
         },
         {
-          emri: "TIRAMISU",
+          emri: "ICE CREAM FRAPPE",
+          perbersit: "Banana, Milk, Honey, Ice Cream ",
+          cmimi: "100",
+          image: tiramisu,
+        },
+        {
+          emri: "RASPBERRY CRUSHER",
+          perbersit: "Raspberry, Banana, Apple",
+          cmimi: "100",
+          image: tiramisu,
+        },
+        {
+          emri: "STRAWBERRY FUSION",
+          perbersit: "Strawberry, Banana, Apple",
+          cmimi: "100",
+          image: tiramisu,
+        },
+        {
+          emri: "GRAPEFRUIT GOODNESS",
+          perbersit: "Grapefruit, Apple, Orange, Pineapple, Mint",
+          cmimi: "100",
+          image: tiramisu,
+        },
+        {
+          emri: "FIRE ME UP",
+          perbersit: "Green Apple, Lemon, Extra Ginger",
+          cmimi: "100",
+          image: tiramisu,
+        },
+        {
+          emri: "DOUBLE GREEN",
+          perbersit: "Green Apple, Kiwi",
+          cmimi: "100",
+          image: tiramisu,
+        },
+        {
+          emri: "SLIM MIX",
+          perbersit: "Citrus, Lemon, Carrots, Green Apple",
+          cmimi: "100",
+          image: tiramisu,
+        },
+        {
+          emri: "CHERRY SPLASH",
+          perbersit: "Cherry, Apple, Banana",
+          cmimi: "100",
+          image: tiramisu,
+        },
+        {
+          emri: "OREO SMOOTHIE",
+          perbersit: "Oreo, Ice Cream, Milk, Banana",
+          cmimi: "110",
+          image: tiramisu,
+        },
+        {
+          emri: "RED DRAGON",
+          perbersit: "Red Berries, Orange, Apple, Banana",
+          cmimi: "110",
+          image: tiramisu,
+        },
+        {
+          emri: "GREEN PARADISE",
+          perbersit: "Apple, Kiwi, Pineapple, Citrus, Lemon",
+          cmimi: "120",
+          image: tiramisu,
+        },
+        {
+          emri: "BLUEBERRY SMOOTHIE",
+          perbersit: "Blueberry, Milk, Ice Cream, Banana",
+          cmimi: "130",
+          image: tiramisu,
+        },
+        {
+          emri: "STRAWBERRY SHAKE",
+          perbersit: "Strawberry, Milk, Ice Cream, Banana",
+          cmimi: "130",
+          image: tiramisu,
+        },
+        {
+          emri: "BULL'S BERRY SMOOTHIE",
+          perbersit: "Red Bull, Strawberry, Raspberry, Orange",
+          cmimi: "250",
+          image: tiramisu,
+        },
+        {
+          emri: "RED BULL JUICE",
           perbersit: "",
-          cmimi: "",
+          cmimi: "250",
           image: tiramisu,
         },
       ],

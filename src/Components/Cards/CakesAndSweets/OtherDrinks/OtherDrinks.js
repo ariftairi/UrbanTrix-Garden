@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import ModalImage from "react-modal-image";
 import aglio from "../../../Images/pastaImages/aleoli3.jpg";
-import napoli from "../../../Images/pastaImages/napoli.jpg";
-import karbonara from "../../../Images/pastaImages/karbonara3.jpg";
-import bolognese from "../../../Images/pastaImages/bologneze3.jpg";
-import frutadeti from "../../../Images/pastaImages/frutadeti.png";
-import arabiata from "../../../Images/pastaImages/arabiata3.jpg";
+
 
 export default class Pasta extends Component {
   constructor() {
@@ -14,42 +10,53 @@ export default class Pasta extends Component {
     this.state = {
       Pasta: [
         {
-          emri: "AGLIO E OLIO",
-          perbersit: "Vaj ulliri dhe hudhër",
-          cmimi: "140",
+          emri: "NATURAL WATER",
+          perbersit: "",
+          cmimi: "40",
           image: aglio,
-        },
-        {
-          emri: "ARABIATA",
-          perbersit: "Salcë domatesh, Hudhër, Ullinjë, Djegës",
-          cmimi: "160",
-          image: arabiata,
-        },
-        {
-          emri: "NAPOLI",
-          perbersit: "Sallcë domatesh",
-          cmimi: "140",
-          image: napoli,
-        },
-
-        {
-          emri: "BOLOGNESE",
-          perbersit: "Salcë domatesh, Mish i bluar, Qepë",
-          cmimi: "180",
-          image: bolognese,
-        },
-        {
-          emri: "KARBONARA",
-          perbersit: "Sos këpurdhash, Salcë, Proshutë",
-          cmimi: "200",
-          image: karbonara,
-        },
-        {
-          emri: "FRUTA DETI",
-          perbersit: "Salcë domatesh, Fruta deti",
-          cmimi: "260",
-          image: frutadeti,
-        },
+      },
+      {
+          emri: "MINERAL WATER",
+          perbersit: "",
+          cmimi: "40",
+          image: aglio,
+      },
+      {
+          emri: "COCA COLA",
+          perbersit: "",
+          cmimi: "50",
+          image: aglio,
+      },
+      {
+          emri: "FANTA",
+          perbersit: "",
+          cmimi: "50",
+          image: aglio,
+      },
+      {
+          emri: "STRUMKA",
+          perbersit: "",
+          cmimi: "50",
+          image: aglio,
+      },
+      {
+          emri: "SCHWEPPES",
+          perbersit: "",
+          cmimi: "50",
+          image: aglio,
+      },
+      {
+          emri: "SHWEPPES TONIC",
+          perbersit: "",
+          cmimi: "50",
+          image: aglio,
+      },
+      {
+          emri: "SPRITE",
+          perbersit: "",
+          cmimi: "50",
+          image: aglio,
+      },
       ],
     };
   }
@@ -57,7 +64,7 @@ export default class Pasta extends Component {
   render() {
     return (
       <div>
-        <h3>Pasta</h3>
+        <h3>Drinks</h3>
         <hr />
         <div className="row">
           {this.state.Pasta.map((items) => (
